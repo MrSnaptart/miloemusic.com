@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- General setup -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Miloe</title>
+
+		<!-- CSS -->
+  		<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto" rel="stylesheet">
+		<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+      	<style type="text/css">
+
+      		body {
+      			display: flex;
+      			min-height: 100vh;
+      			flex-direction: column;
+      			background-color: #ffa3a3;
+      			font-family: "Roboto";
+      			line-height: 20px;
+      			color: white;
+      			font-weight: bold;
+      		}
+
+      		main {
+      			flex: 1 0 auto;
+      		}
+
+      		.card {
+      			background-color: #ffcac7;
+      		}
+
+      		#label {
+      		}
+
+      	</style> 
+
+	</head>
+	<body>
+
+
+
+		<div class="container">
+			<div class="col s1">
+			<img class="responsive-img" alt="" src="resources/logo.png">
+		</div>
+		</div>
+
+
+
+
+		<div class="container">
+
+			<!-- Music -->
+			<div class="row">
+
+				<h4 class="center-align" id="label">music</h4>
+
+				<div class="col s6 offset-s3">
+
+					<!-- Spotify follow button -->
+					<div class="center-align">
+						<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3HdQTgQSncptIPjDgskWbu&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+					</div>
+
+					<!-- Spotify play button -->
+					<div class="center-align">
+						<iframe src="https://open.spotify.com/embed/artist/3HdQTgQSncptIPjDgskWbu" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+					</div>
+
+				</div>
+
+			</div>
+
+			
+			<div class="divider"></div>
+
+
+			<!-- Shows / Events -->
+			<div class="row">
+				<h4 class="center-align" id="label">shows</h4>
+				<div class="col s12" id="shows"></div>
+			</div>
+
+		</div>
+
+
+
+		<!-- Footer -->
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row">
+					<div class="center-align">
+						<h5 class="white-text" id="label">social / contact</h5>
+						<ul>
+							<li><a class="grey-text text-lighten-3" href="#!">the.miloemusic@gmail.com</a></li>
+							<li><a class="grey-text text-lighten-3" href="https://www.instagram.com/miloemusic/">instagram</a></li>
+							<li><a class="grey-text text-lighten-3" href="https://www.facebook.com/miloemusic/">facebook</a></li>
+							<li><a class="grey-text text-lighten-3" href="https://twitter.com/miloemusic">twitter</a></li>
+							<li><a class="grey-text text-lighten-3" href="https://miloe.bandcamp.com/">bandcamp</a></li>
+							<li><a class="grey-text text-lighten-3" href="https://soundcloud.com/miloemusic">soundcloud</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/init.js"></script>
+
+	</body>
+</html>
