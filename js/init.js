@@ -18,7 +18,23 @@
 	// 	$('.parallax').parallax();
 	// });
 
+	// SPOTIFY API
+
+	// $.ajax({
+	// 	url: "https://api.spotify.com/v1/artists/3HdQTgQSncptIPjDgskWbu",
+	// 	data: {
+
+	// 	}
+	// }).done(function(data) {
+	// 	console.log(data);
+
+	// 	$("#about").append('<img class="responsive-img" alt="test" src="' + data.images[0].url + '"/>');
+
+	// });
+
+
 	// GOOGLE CALENDAR API
+	// TODO: clean up
 
 	var calID = "the.miloemusic@gmail.com";
 	var https = "https://www.googleapis.com/calendar/v3/calendars/" + calID + "/events";
