@@ -20,7 +20,7 @@
       			background-color: #ffa3a3;
       			font-family: "Roboto";
       			line-height: 20px;
-      			color: white;
+      			color: black;
       			font-weight: bold;
       		}
 
@@ -28,37 +28,243 @@
       			flex: 1 0 auto;
       		}
 
+			i {
+				color: black;
+				margin-right: 10px;
+			}
+			
+			.divider {
+				background-color: black;
+			}
+
       		.card {
       			background-color: #ffcac7;
       		}
 
       		#label {
       		}
+      		
+      		.mdate * {
+      			font-weight: bold;
+      		}
+      		
+      		
+      		
+      		
+      		.vid-container {
+				position: relative;
+				padding-bottom: 52%;
+				padding-top: 30px; 
+				height: 0; 
+			}
+
+			.vid-container iframe,
+			.vid-container object,
+			.vid-container embed {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.vid-list-container {
+				width: 92%;
+				overflow: hidden;
+				margin-top: 20px;
+				margin-left:4%;
+				padding-bottom: 20px;
+			}
+
+			.vid-list {
+				width: 1344px;
+				position: relative;
+				top:0;
+				left: 0;
+			}
+			
+			.vid-item {
+				display: block;
+				width: 148px;
+				height: 148px;
+				float: left;
+				margin: 0;
+				padding: 10px;
+			}
+
+			.thumb {
+				overflow:hidden;
+				height: 84px;
+			}
+
+			.thumb img {
+				width: 100%;
+				position: relative;
+				top: -13px;
+			}
+
+			.vid-item .desc {
+				color: #21A1D2;
+				font-size: 15px;
+				margin-top:5px;
+			}
+			
+			.arrows {
+				position:relative;
+				width: 100%;
+			}
+
+			.arrow-left {
+				color: #fff;
+				position: absolute;
+				background: #777;
+				padding: 15px;
+				left: -25px;
+				top: -130px;
+				z-index: 99;
+				cursor: pointer;
+			}
+
+			.arrow-right {
+				color: #fff;
+				position: absolute;
+				background: #777;
+				padding: 15px;
+				right: -25px;
+				top: -130px;
+				z-index:100;
+				cursor: pointer;
+			}
+			
+			@media (max-width: 624px) {
+				.arrows {
+					position:relative;
+					margin: 0 auto;
+					width:96px;
+				}
+				.arrow-left {
+					left: 0;
+					top: -20px;
+				}
+
+				.arrow-right {
+					right: 0;
+					top: -20px;
+				}
+			}
 
       	</style> 
 
 	</head>
 	<body>
-
-
-
 		<div class="container">
-			<div class="col s1">
-			<img class="responsive-img" alt="" src="resources/logo.png">
+		
+			<!-- Logo/Social -->
+			<div class="row">
+				<div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+					<img class="responsive-img" alt="" src="resources/logo.png">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="center-align">
+					
+					<a class="" href="https://www.instagram.com/miloemusic/"><i class="fab fa-instagram fa-2x"></i></a>
+					<a class="" href="https://www.facebook.com/miloemusic/"><i class="fab fa-facebook fa-2x"></i></a>
+					<a class="" href="https://twitter.com/miloemusic"><i class="fab fa-twitter fa-2x"></i></a>
+					<a class="" href="https://www.youtube.com/channel/UCpuBBtolKEKdiUKb7zjctYg"><i class="fab fa-youtube fa-2x"></i></a>
+					<a class="" href="https://miloe.bandcamp.com/"><i class="fab fa-bandcamp fa-2x"></i></a>
+					<a class="" href="https://soundcloud.com/miloemusic"><i class="fab fa-soundcloud fa-2x"></i></a>
+
+				</div>
+			</div>
+
+			<div class="divider"></div>
+
+
+			<!-- Shows / Events -->
+			<div class="row">
+				<h4 class="center-align" id="label">shows</h4>
+				<div class="col s12" id="shows"></div>
+			</div>
+
+			<div class="divider"></div>
+			
+			<!-- Videos -->
+			<div class="row">
+			
+				<div class="container">
+
+  		<!-- THE YOUTUBE PLAYER -->
+  		<div class="vid-container">
+		    <iframe id="vid_frame" src="http://www.youtube.com/embed/eg6kNoJmzkY?rel=0&amp;showinfo=0&amp;autohide=1" frameborder="0" width="560" height="315"></iframe>
 		</div>
-		</div>
 
+		<!-- THE PLAYLIST -->
+		<div class="vid-list-container">
+	        <div class="vid-list">
+	         	
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/eg6kNoJmzkY?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg"></div>
+ 	              <div class="desc">Jessica Hernandez &amp; the Deltas - Dead Brains</div>
+ 	            </div>
+ 	          
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/_Tz7KROhuAw/0.jpg"></div>
+ 	              <div class="desc">Barbatuques - CD Tum Pá - Sambalelê</div>
+ 	            </div>
 
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/F1f-gn_mG8M?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/F1f-gn_mG8M/0.jpg"></div>
+ 	              <div class="desc">Eleanor Turner plays Baroque Flamenco</div>
+ 	            </div>
 
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/fB8UTheTR7s?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/fB8UTheTR7s/0.jpg"></div>
+ 	              <div class="desc">Sleepy Man Banjo Boys: Bluegrass</div>
+ 	            </div>
 
-		<div class="container">
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/0SNhAKyXtC8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/0SNhAKyXtC8/0.jpg"></div>
+ 	              <div class="desc">Edmar Castaneda: NPR Music Tiny Desk Concert</div>
+ 	            </div>
 
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/RTHI_uGyfTM?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/RTHI_uGyfTM/0.jpg"></div>
+ 	              <div class="desc">Winter Harp performs Caravan</div>
+ 	            </div>
+ 	          
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/abQRt6p8T7g?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/abQRt6p8T7g/0.jpg"></div>
+ 	              <div class="desc">The Avett Brothers Tiny Desk Concert</div>
+ 	            </div>
+
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/fpmN9JorFew?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/fpmN9JorFew/0.jpg"></div>
+ 	              <div class="desc">Tracy Chapman - Give Me One Reason</div>
+ 	            </div>
+
+	 	    </div>
+        </div>
+
+        <!-- LEFT AND RIGHT ARROWS -->
+        <div class="arrows">
+        	<div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+        	<div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+        </div>
+
+  	</div>
+				
+			</div>
+
+			<div class="divider"></div>
+			
 			<!-- Music -->
 			<div class="row">
 
 				<h4 class="center-align" id="label">music</h4>
 
-				<div class="col s6 offset-s3">
+				<div class="col s12">
 
 					<!-- Spotify follow button -->
 					<div class="center-align">
@@ -75,44 +281,26 @@
 			</div>
 
 			
-			<div class="divider"></div>
 
-
-			<!-- Shows / Events -->
-			<div class="row">
-				<h4 class="center-align" id="label">shows</h4>
-				<div class="col s12" id="shows"></div>
-			</div>
-
-		</div>
 
 
 
 		<!-- Footer -->
 		<footer class="page-footer">
-			<div class="container">
-				<div class="row">
-					<div class="center-align">
-						<h5 class="white-text" id="label">social / contact</h5>
-						<ul>
-							<li><a class="grey-text text-lighten-3" href="#!">the.miloemusic@gmail.com</a></li>
-							<li><a class="grey-text text-lighten-3" href="https://www.instagram.com/miloemusic/">instagram</a></li>
-							<li><a class="grey-text text-lighten-3" href="https://www.facebook.com/miloemusic/">facebook</a></li>
-							<li><a class="grey-text text-lighten-3" href="https://twitter.com/miloemusic">twitter</a></li>
-							<li><a class="grey-text text-lighten-3" href="https://miloe.bandcamp.com/">bandcamp</a></li>
-							<li><a class="grey-text text-lighten-3" href="https://soundcloud.com/miloemusic">soundcloud</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+
+					<a class="" href="mailto:the.miloemusic@gmail.com">the.miloemusic@gmail.com</a>
+
 		</footer>
 
 
 
 		<!-- Scripts -->
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/moment.js"></script>
 		<script src="js/materialize.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="https://kit.fontawesome.com/9a1f5aea51.js" crossorigin="anonymous"></script>
 
+		</div>
 	</body>
 </html>
