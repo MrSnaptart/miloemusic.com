@@ -80,7 +80,7 @@
 
 			// shows.push(date +  " " + lctn + " w/ " + acts + " " + time);
 			
-			
+			// hope this worjs
 				
 			var link = data.items[i].description;
 
