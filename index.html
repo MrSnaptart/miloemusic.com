@@ -33,6 +33,15 @@
 				margin-right: 10px;
 			}
 			
+			.venue-link {
+				color: #000;
+				text-decoration: underline;
+			}
+			
+			.page-footer {
+				background-color: #ffa3a3;
+			}
+			
 			.divider {
 				background-color: black;
 			}
@@ -48,10 +57,18 @@
       			font-weight: bold;
       		}
       		
+      		.email {
+      			color: #505050;
+      		}
       		
-      		
-      		
+      		.email-footer {
+      			margin-bottom: 30px;
+      		}
+
+
+
       		.vid-container {
+      			margin-top: 30px;
 				position: relative;
 				padding-bottom: 52%;
 				padding-top: 30px; 
@@ -84,6 +101,7 @@
 			}
 			
 			.vid-item {
+				cursor: pointer;
 				display: block;
 				width: 148px;
 				height: 148px;
@@ -104,7 +122,7 @@
 			}
 
 			.vid-item .desc {
-				color: #21A1D2;
+				/*color: #21A1D2;*/
 				font-size: 15px;
 				margin-top:5px;
 			}
@@ -117,7 +135,7 @@
 			.arrow-left {
 				color: #fff;
 				position: absolute;
-				background: #777;
+				background-color: rgba(255,163,163,0);
 				padding: 15px;
 				left: -25px;
 				top: -130px;
@@ -128,7 +146,7 @@
 			.arrow-right {
 				color: #fff;
 				position: absolute;
-				background: #777;
+				background-color: rgba(255,163,163,0);
 				padding: 15px;
 				right: -25px;
 				top: -130px;
@@ -140,6 +158,8 @@
 				.arrows {
 					position:relative;
 					margin: 0 auto;
+					margin-bottom: 20px;
+					margin-top: 10px;
 					width:96px;
 				}
 				.arrow-left {
@@ -192,56 +212,40 @@
 			
 			<!-- Videos -->
 			<div class="row">
-			
-				<div class="container">
 
+<h4 class="center-align" id="label">videos</h4>
   		<!-- THE YOUTUBE PLAYER -->
   		<div class="vid-container">
-		    <iframe id="vid_frame" src="http://www.youtube.com/embed/eg6kNoJmzkY?rel=0&amp;showinfo=0&amp;autohide=1" frameborder="0" width="560" height="315"></iframe>
+		    <iframe id="vid_frame" src="https://www.youtube.com/embed/CWoBvZLlw4I?rel=0&amp;showinfo=0&amp;autohide=1" frameborder="0" width="560" height="315"></iframe>
 		</div>
 
 		<!-- THE PLAYLIST -->
 		<div class="vid-list-container">
 	        <div class="vid-list">
 	         	
- 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/eg6kNoJmzkY?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
- 	              <div class="thumb"><img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg"></div>
- 	              <div class="desc">Jessica Hernandez &amp; the Deltas - Dead Brains</div>
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/CWoBvZLlw4I?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="https://img.youtube.com/vi/CWoBvZLlw4I/0.jpg"></div>
+ 	              <div class="desc">Miloe - Welcome (visual)</div>
  	            </div>
  	          
- 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/_Tz7KROhuAw?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
- 	              <div class="thumb"><img src="http://img.youtube.com/vi/_Tz7KROhuAw/0.jpg"></div>
- 	              <div class="desc">Barbatuques - CD Tum Pá - Sambalelê</div>
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/hfs2-_v-QpY?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="https://img.youtube.com/vi/hfs2-_v-QpY/0.jpg"></div>
+ 	              <div class="desc">Miloe - HOME (Official Music Video)</div>
  	            </div>
 
- 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/F1f-gn_mG8M?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
- 	              <div class="thumb"><img src="http://img.youtube.com/vi/F1f-gn_mG8M/0.jpg"></div>
- 	              <div class="desc">Eleanor Turner plays Baroque Flamenco</div>
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/fgpbeFH4rxw?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="https://img.youtube.com/vi/fgpbeFH4rxw/0.jpg"></div>
+ 	              <div class="desc">Miloe - Space and Time (Official Music Video)</div>
  	            </div>
 
- 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/fB8UTheTR7s?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
- 	              <div class="thumb"><img src="http://img.youtube.com/vi/fB8UTheTR7s/0.jpg"></div>
- 	              <div class="desc">Sleepy Man Banjo Boys: Bluegrass</div>
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/o-1TZfxS2k0?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="https://img.youtube.com/vi/o-1TZfxS2k0/0.jpg"></div>
+ 	              <div class="desc">Miloe - Space and Time (Live Session)</div>
  	            </div>
 
- 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/0SNhAKyXtC8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
- 	              <div class="thumb"><img src="http://img.youtube.com/vi/0SNhAKyXtC8/0.jpg"></div>
- 	              <div class="desc">Edmar Castaneda: NPR Music Tiny Desk Concert</div>
- 	            </div>
-
- 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/RTHI_uGyfTM?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
- 	              <div class="thumb"><img src="http://img.youtube.com/vi/RTHI_uGyfTM/0.jpg"></div>
- 	              <div class="desc">Winter Harp performs Caravan</div>
- 	            </div>
- 	          
- 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/abQRt6p8T7g?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
- 	              <div class="thumb"><img src="http://img.youtube.com/vi/abQRt6p8T7g/0.jpg"></div>
- 	              <div class="desc">The Avett Brothers Tiny Desk Concert</div>
- 	            </div>
-
- 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/fpmN9JorFew?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
- 	              <div class="thumb"><img src="http://img.youtube.com/vi/fpmN9JorFew/0.jpg"></div>
- 	              <div class="desc">Tracy Chapman - Give Me One Reason</div>
+ 	            <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/HheB3xRpdiU?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+ 	              <div class="thumb"><img src="https://img.youtube.com/vi/HheB3xRpdiU/0.jpg"></div>
+ 	              <div class="desc">Miloe @ Seward Cafe 08.22.19</div>
  	            </div>
 
 	 	    </div>
@@ -253,7 +257,6 @@
         	<div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
         </div>
 
-  	</div>
 				
 			</div>
 
@@ -280,19 +283,14 @@
 
 			</div>
 
-			
+			<div class="divider"></div>
 
-
-
-
-		<!-- Footer -->
-		<footer class="page-footer">
-
-					<a class="" href="mailto:the.miloemusic@gmail.com">the.miloemusic@gmail.com</a>
-
-		</footer>
-
-
+			<div class="row email-footer">
+				<h4 class="center-align" id="label">contact</h4>
+				<div class="col s12 center-align">
+					<h5><a class="email" href="mailto:the.miloemusic@gmail.com">the.miloemusic@gmail.com</a></h5>
+				</div>
+			</div>
 
 		<!-- Scripts -->
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
