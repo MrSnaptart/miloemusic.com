@@ -32,6 +32,20 @@
 
 	// });
 
+	// YOUTUBE API
+
+	var playlist_id = "PLdFIy2lTtvYvwYL4gWh8a5C5z94SpasbL";
+	var yt_api_key = "AIzaSyBNEKaeWlpXdv8L3no2cAwyLGm9TK9-ORI";
+
+	$.ajax({
+		url: "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=" + playlist_id + "&key=" + yt_api_key,
+		data: {
+
+		}
+	}).done(function(data) {
+		console.log(data);
+	});
+
 
 	// GOOGLE CALENDAR API
 	// TODO: clean up
