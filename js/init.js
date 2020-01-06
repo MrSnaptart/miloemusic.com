@@ -44,6 +44,21 @@
 		}
 	}).done(function(data) {
 		console.log(data);
+
+		// this is for the initial video showing on tha website
+		$("#video-frame").append('<iframe id="vid_frame" src="https://www.youtube.com/embed/' + 
+			data.items[data.items.length-1].snippet.resourceId.videoId + '?rel=0&amp;showinfo=0&amp;autohide=1" frameborder="0" width="560" height="315"></iframe>')
+
+		// this is for the list of videos below
+		for(i in data.items) {
+
+			let videoID = data.items[i].snippet.resourceId.videoId;
+			let video_name = data.items[i].snippet.title;
+
+			$("#videos").append('<div class="vid-item" onclick="document.getElementById(\'vid_frame\').src=\'https://youtube.com/embed/' + 
+				videoID + '?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1\'"><div class="thumb"><img src="https://img.youtube.com/vi/' + 
+				videoID + '/0.jpg"></div><div class="desc">' + video_name + '</div></div>');
+		}
 	});
 
 
